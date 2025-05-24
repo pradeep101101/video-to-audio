@@ -1,0 +1,16 @@
+run = "python3 main.py"
+entrypoint = "main.py"
+
+[nix]
+channel = "stable-24_05"
+packages = [
+  "ffmpeg-full",
+  "imagemagickBig",
+  "libGL",
+  "python3Packages.moviepy",
+  "python3Packages.flask"
+]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
