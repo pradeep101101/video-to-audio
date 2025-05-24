@@ -1,0 +1,9 @@
+{ pkgs }: {
+  deps = [
+    pkgs.ffmpeg-full
+    pkgs.imagemagickBig
+    pkgs.libGL
+    pkgs.python3Packages.moviepy
+    pkgs.python3Packages.flask
+  ];
+}
